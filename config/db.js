@@ -10,12 +10,11 @@ const db = {
         "operatorsAliases": false
 },
     "production": {
-        "username": process.env.DB_USER,
-        "password": process.env.DB_PASSWORD,
-        "database": process.env.DB_DATABASE,
-        "host": process.env.DB_HOST+":"+process.env.DB_PORT,
+        "database": 'DATABASE',
         "dialect": "postgres",
-        "operatorsAliases": false
+        "protocol": 'postgres',
+        "operatorsAliases": false,
+        "use_env_variable": true
     }
 };
 module.exports = db[process.env.NODE_ENV] || db['development'];
