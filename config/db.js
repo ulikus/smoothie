@@ -10,11 +10,10 @@ const db = {
         "operatorsAliases": false
 },
     "production": {
-        "database": 'DATABASE',
         "dialect": "postgres",
         "protocol": 'postgres',
         "operatorsAliases": false,
-        "use_env_variable": true
+        "use_env_variable": 'DATABASE'
     }
 };
 module.exports = db[process.env.NODE_ENV] || db['development'];
