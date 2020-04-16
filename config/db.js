@@ -13,7 +13,7 @@ const db = {
         "dialect": "postgres",
         "protocol": 'postgres',
         "operatorsAliases": false,
-        "use_env_variable": 'DATABASE'
+        "use_env_variable": 'DATABASE_URL'
     }
 };
 module.exports = db[process.env.NODE_ENV] || db['development'];
