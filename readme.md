@@ -1,3 +1,6 @@
+### API is available at:
+`https://smoothie-node-api.herokuapp.com/smoothie`
+
 ###API for smoothies like example:
 ```[
        {
